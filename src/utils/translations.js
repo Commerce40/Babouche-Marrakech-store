@@ -1,6 +1,11 @@
 export const translations = {
   fr: {
-    siteTitle: "Babouche Marrakech",
+    // --- NOUVEAU COPYWRITING DE CONVERSION (Page Hero) ---
+    siteTitle: "Babouche Marrakech — L'élégance marocaine livrée chez vous",
+    heroTitle: "Babouches Marocaines Artisanales pour Hommes", // Quoi ? Pour qui ?
+    heroSubtitle: "Alliez Confort, Élégance et Simplicité : Livré chez vous, sur Dakar.", // Pourquoi ici ?
+    
+    // --- Clés Originales & Standard ---
     addToCart: "Ajouter au panier",
     collectionTitle: "Nos babouches royales",
     viewCollection: "Voir la collection",
@@ -11,10 +16,87 @@ export const translations = {
     total: "Total",
     checkout: "Commander sur WhatsApp",
     emptyCart: "Votre panier est vide.",
-    footerText: "L'élégance marocaine à vos pieds."
+    footerText: "L'élégance marocaine à vos pieds.",
+
+    // Autres clés nécessaires pour le fonctionnement (restaurées)
+    addedToCart: "Ajouté au panier!",
+    details: "Détails",
+    cart: "Panier",
+    name: "Nom",
+    phone: "Téléphone",
+    address: "Adresse de livraison",
+    note: "Note / Instructions",
+    sendOrder: "Envoyer la commande sur WhatsApp",
+    printable: "Imprimer la fiche produit",
+    close: "Fermer",
+    productFor: "Produit",
+    size: "Pointure",
+    formValidation: "Merci de renseigner votre nom, téléphone et adresse.",
+    clearCart: "Vider le panier",
+    cartCleared: "Panier vidé.",
+    
+    // --- NOUVEAUX TEXTES pour les pages statiques (restaurés) ---
+    aboutHeader: "Le Meilleur de Marrakech, Sélectionné pour Vous",
+    aboutStep1Title: "La Source : Marrakech",
+    aboutStep1Desc: "Notre histoire est celle d'une passion pour un produit iconique. Nous parcourons les ruelles animées de la médina pour trouver les meilleurs artisans.",
+    aboutStep2Title: "L'Œil de l'Expert",
+    aboutStep2Desc: "Nous ne sommes pas les fabricants, mais les gardiens de la qualité. Chaque paire est examinée selon des critères stricts : qualité du cuir, finesse des coutures, et confort.",
+    aboutStep3Title: "Une Sélection Rigoureuse",
+    aboutStep3Desc: "Seuls les modèles qui répondent à nos exigences de qualité et de style rejoignent la collection Babouche Marrakech. C'est notre garantie d'authenticité.",
+    aboutStep4Title: "Le Pont vers le Sénégal",
+    aboutStep4Desc: "Nous importons directement ces trésors de l'artisanat marocain pour vous les rendre accessibles à Dakar et partout au Sénégal.",
+    aboutStep5Title: "Votre Satisfaction",
+    aboutStep5Desc: "En choisissant notre boutique, vous avez la garantie d'acquérir une pièce authentique, validée par notre expertise et prête à vous accompagner au quotidien.",
+    aboutConclusion: "C'est ça, l'engagement Babouche Marrakech.",
+    aboutSlogan: "L'authenticité et la qualité, à chaque pas.",
+    
+    sizeGuideTitle: "Guide des Tailles - Babouche Marrakech",
+    sizeGuideHeader: "Trouvez Votre Pointure",
+    sizeGuideSubtitle: "Quelques conseils pour vous aider à choisir.",
+    sizeGuideOurAdvice: "Notre Conseil",
+    sizeGuideAdviceText: "Chaque modèle de babouche est unique. D'une manière générale, nos babouches taillent de façon standard. Cependant, pour un confort optimal, surtout avec les modèles pointus, beaucoup de nos clients apprécient de prendre une taille au-dessus de leur pointure habituelle.",
+    sizeGuideBestAdvice: "Le meilleur conseil, c'est le nôtre !",
+    sizeGuideBestAdviceText: "Vous avez un doute ? C'est normal. Contactez-nous directement sur WhatsApp. Nous connaissons chaque modèle par cœur et nous vous aiderons à choisir la taille parfaite en fonction de la babouche qui vous plaît.",
+    sizeGuideDiscuss: "Discuter sur WhatsApp",
+    sizeGuideTableTitle: "Tableau de Correspondance (à titre indicatif)",
+    sizeGuideTableSubtitle: "Si vous connaissez la longueur de votre pied, ce tableau peut vous aider à vous orienter.",
+    sizeGuideTableCol1: "Pointure EU",
+    sizeGuideTableCol2: "Longueur du pied (cm)",
+
+    faqTitle: "FAQ - Babouche Marrakech",
+    faqHeader: "Foire Aux Questions",
+    faqSubtitle: "Nous avons rassemblé ici les réponses à vos questions les plus fréquentes.",
+    faqQ1: "Comment puis-je passer une commande ?",
+    faqA1: "C'est très simple ! Une fois votre panier rempli sur notre site, vous cliquez sur 'Envoyer la commande sur WhatsApp'. Cela prépare un message avec tous les détails de votre commande. Il vous suffit de nous l'envoyer et nous vous contacterons pour finaliser.",
+    faqQ2: "Quels sont les moyens de paiement acceptés ?",
+    faqA2: "Pour le moment, nous acceptons le paiement à la livraison (en espèces) ainsi que les paiements par mobile money (Orange Money, Wave). Nous vous communiquerons les détails lors de la confirmation de votre commande sur WhatsApp.",
+    faqQ3: "Quels sont les délais et frais de livraison ?",
+    faqA3: "Pour Dakar et sa banlieue, la livraison se fait généralement en 24h à 48h. Pour certains modèles comme la 'Babouche Royal Classique', la livraison est gratuite sur Dakar. Pour les autres régions du Sénégal, nous vous communiquerons les frais et délais lors de la confirmation.",
+    faqQ4: "Comment choisir la bonne pointure ?",
+    faqA4: "Nous vous conseillons de prendre votre pointure habituelle. Pour plus de détails et pour être certain de votre choix, veuillez consulter notre page dédiée :",
+    faqL4: "Consulter le Guide des Tailles",
+    faqQ5: "Une couleur que je souhaite n'est pas dans la liste, que faire ?",
+    faqA5: "Nous sommes artisans avant tout ! Sur la page du produit, choisissez l'option 'Autre couleur...' et précisez la couleur que vous désirez dans le champ qui apparaît. Nous vous confirmerons sur WhatsApp si nous pouvons réaliser votre commande personnalisée.",
+    faqQ6: "Vos babouches sont-elles vraiment fabriquées artisanalement ?",
+    faqA6: "Absolument. Chaque paire est le fruit du savoir-faire de nos artisans partenaires à Marrakech, perpétuant un héritage familial. Nous utilisons des matériaux de première qualité comme le cuir pleine fleur, le velours et le daim véritables.",
+
+    returnPolicyTitle: "Politique de Retour - Babouche Marrakech",
+    returnPolicyHeader: "Politique de Retour",
+    returnPolicySubtitle: "Votre satisfaction est notre priorité.",
+    returnPolicyH1: "Conditions de Retour",
+    returnPolicyT1: "Vous disposez d'un délai de 7 jours à compter de la date de réception de votre commande pour demander un échange ou un avoir. Pour être accepté, l'article retourné doit impérativement être dans son état d'origine : neuf, jamais porté, et dans son emballage.",
+    returnPolicyH2: "Procédure de Retour",
+    returnPolicyT2_1: "Contactez-nous directement sur WhatsApp avec votre nom et les détails de la commande à retourner.",
+    returnPolicyT2_2: "Précisez le motif de votre retour (problème de taille, défaut, etc.).",
+    returnPolicyT2_3: "Nous organiserons avec vous les modalités de récupération du produit (principalement sur Dakar).",
+    returnPolicyH3: "Échange ou Avoir",
+    returnPolicyT3: "Une fois l'article retourné et inspecté, nous vous proposerons soit un échange pour une autre pointure ou un autre modèle, soit un avoir valable sur l'ensemble de notre boutique. Les frais de livraison pour le nouvel envoi peuvent être à votre charge.",
+    returnPolicyH4: "Exceptions",
+    returnPolicyT4: "Veuillez noter que les articles personnalisés, notamment ceux pour lesquels vous avez demandé une 'Autre couleur' qui n'est pas proposée par défaut, ne sont ni repris ni échangés.",
   },
   ar: {
-    siteTitle: "بابوش مراكش",
+    // Laisser les placeholders pour l'Arabe
+    siteTitle: "بابوش مراكش — أحذية ملكية",
     addToCart: "أضف إلى السلة",
     collectionTitle: "مجموعتنا الملكية",
     viewCollection: "شاهد المجموعة",
@@ -25,10 +107,13 @@ export const translations = {
     total: "المجموع",
     checkout: "اطلب عبر واتساب",
     emptyCart: "سلتك فارغة",
-    footerText: "الأناقة المغربية بين يديك"
+    footerText: "الأناقة المغربية بين يديك",
+    
+    // ... (tous les autres placeholders nécessaires)
   },
   wo: {
-    siteTitle: "Babouche Marrakech",
+    // Laisser les placeholders pour le Wolof
+    siteTitle: "Babouche Marrakech — Babouces royales",
     addToCart: "Yokko ci panier bi",
     collectionTitle: "Sunu babouche yu rafet",
     viewCollection: "Xool collection bi",
@@ -39,6 +124,8 @@ export const translations = {
     total: "Lëpp",
     checkout: "Jënd ci WhatsApp",
     emptyCart: "Sa panier dafa vide.",
-    footerText: "Rafetaayu Maroc ci sa tank."
-  }
+    footerText: "Rafetaayu Maroc ci sa tank.",
+    
+    // ... (tous les autres placeholders nécessaires)
+  },
 };

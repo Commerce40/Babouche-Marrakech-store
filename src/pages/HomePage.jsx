@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { products } from '../data/products';
-import ProductCard from '../components/ProductCard';
+import { BABOUCHES, BONUS_PRODUCTS } from '../data/products';
+import ProductSlider from '../components/ProductSlider';
 
 const HomePage = ({ lang, t }) => {
   return (
@@ -9,8 +9,9 @@ const HomePage = ({ lang, t }) => {
       {/* Hero Banner */}
       <div className="relative h-[60vh] bg-gray-900 overflow-hidden">
         <img 
-          src="/images/balghati1.jpg" // À ajouter dans public/images/
+          src="/images/balghati1.jpg"
           alt="Banner" 
+          loading="lazy"
           className="w-full h-full object-cover opacity-50"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
@@ -26,15 +27,31 @@ const HomePage = ({ lang, t }) => {
         </div>
       </div>
 
-      {/* Collection */}
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-center mb-10">{t.collectionTitle}</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {products.map(product => (
-            <ProductCard key={product.id} product={product} lang={lang} t={t} />
-          ))}
+      {/* Collection Babouches */}
+      <div className="w-full px-4 py-16">
+        <div className="max-w-7xl mx-auto">
+          <ProductSlider 
+            products={BABOUCHES} 
+            lang={lang} 
+            t={t}
+            title={t.collectionTitle || "Nos Babouches Royales"}
+          />
         </div>
       </div>
+
+      {/* Produits Bonus - Nos Clients Ont Aussi Acheté */}
+      {BONUS_PRODUCTS.length > 0 && (
+        <div className="w-full px-4 py-16 bg-gray-50">
+          <div className="max-w-7xl mx-auto">
+            <ProductSlider 
+              products={BONUS_PRODUCTS} 
+              lang={lang} 
+              t={t}
+              title="Nos clients ont aussi acheté"
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

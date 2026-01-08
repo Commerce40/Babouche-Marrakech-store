@@ -12,7 +12,7 @@ const AboutPage = ({ t }) => {
       <div className="relative h-72 bg-gray-900 overflow-hidden">
         {/* Assure-toi d'avoir une image nommée 'banniere-hero.jpg' ou change le nom ici */}
         <img 
-          src="/images/bm-004.jpeg" 
+          src="/images/babouche-marocaine-mercedes-bleu-nuit-portée.jpeg" 
           alt="Artisanat" 
           className="w-full h-full object-cover opacity-40"
         />

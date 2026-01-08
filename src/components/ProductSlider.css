@@ -1,0 +1,133 @@
+/* ========================================
+   PRODUCT SLIDER - MOBILE FIRST
+   ======================================== */
+
+.product-slider-section {
+  width: 100%;
+  padding: 1.5rem 0;
+}
+
+.product-slider-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #111827;
+}
+
+.product-slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Slider principal - Flex avec scroll-snap natif */
+.product-slider {
+  display: flex;
+  gap: 1rem; /* 16px */
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0 1rem 0.5rem 1rem;
+  scroll-snap-type: x mandatory;
+  
+  /* Smooth scrolling sur tous les appareils */
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  
+  /* Masquer la scrollbar */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* Masquer scrollbar WebKit (Chrome, Safari, Edge) */
+.product-slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* Chaque item du slider */
+.product-slider-item {
+  min-width: 160px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  aspect-ratio: 1;
+}
+
+/* Gradient d'indication pour montrer qu'il y a du contenu à droite */
+.slider-gradient-indicator {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  background: linear-gradient(to right, rgba(249, 250, 251, 0), rgba(249, 250, 251, 1));
+  pointer-events: none;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   Desktop: Grille classique au lieu de slider
+   ======================================== */
+
+@media (min-width: 768px) {
+  .product-slider-container {
+    overflow: visible;
+  }
+
+  .product-slider {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow: visible;
+    gap: 2rem;
+    padding: 0;
+    scroll-snap-type: none;
+    -webkit-overflow-scrolling: auto;
+  }
+
+  .product-slider-item {
+    min-width: auto;
+    flex-shrink: 1;
+    scroll-snap-align: none;
+    scroll-snap-stop: unset;
+    aspect-ratio: auto;
+  }
+
+  .slider-gradient-indicator {
+    display: none;
+  }
+
+  .product-slider-title {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-slider {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+/* ========================================
+   OPTIMISATIONS TABLET
+   ======================================== */
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .product-slider {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: visible;
+    gap: 1.5rem;
+    padding: 0;
+  }
+
+  .product-slider-item {
+    min-width: auto;
+  }
+
+  .slider-gradient-indicator {
+    display: none;
+  }
+}

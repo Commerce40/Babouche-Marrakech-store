@@ -56,8 +56,8 @@ function App() {
             {/* Route Accueil */}
             <Route path="/" element={<HomePage lang={lang} t={t} />} />
             
-            {/* Route Détail Produit */}
-            <Route path="/product/:id" element={<ProductDetailPage lang={lang} t={t} />} />
+            {/* Route Détail Produit (par slug) */}
+            <Route path="/produit/:slug" element={<ProductDetailPage lang={lang} t={t} />} />
             
             {/* Pages Statiques */}
             <Route path="/a-propos" element={<AboutPage t={t} />} />

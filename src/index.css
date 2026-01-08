@@ -6,3 +6,38 @@ body {
   background-color: #f9fafb; /* gray-50 */
   color: #111827; /* gray-900 */
 }
+
+/* ========================================
+   OPTIMISATIONS MOBILES
+   ======================================== */
+
+/* Masquer la scrollbar sur tous les éléments scrollables */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Smooth scrolling sur tous les éléments */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Images responsives */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Prévention du zoom sur input sur mobile */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  font-size: 16px;
+}
